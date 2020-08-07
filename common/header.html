@@ -1,0 +1,143 @@
+<head profile="http://www.w3.org/2005/10/profile">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+<link rel="stylesheet" href="css/header.css">
+</head>
+
+<div class="header">
+	<div class="logo">
+		<a href="../KSOE.html">N<span>U</span></a>
+	</div>
+	<div class="nav">
+		<ul>
+			<li class="ALL">
+				<a href="../common/PRODUCT.html"><span>제품보기</span></a>
+				<div class="nav_box">
+					<div class="category">
+						<ul>
+							<li><a href="./PRODUCT_body.html"><span>BODY</span></a></li>
+<!--
+							<li><a href="#">바디클렌저</a></li>
+							<li><a href="#">바디에멀전 / 크림</a></li>
+							<li><a href="#">바디오일 / 미스트</a></li>
+-->
+						</ul>
+						<ul>
+							<li><a href="./PRODUCT_hair.html"><span>HAIR</span></a></li>
+<!--
+							<li><a href="#">샴푸/린스</a></li>
+							<li><a href="#">에센스 / 트린트먼트</a></li>
+							<li><a href="#">스케일링</a></li>
+-->
+						</ul>
+						<ul>
+							<li><a href="./PRODUCT_Make.html"><span>MAKEUP</span></a></li>
+<!--
+							<li><a href="#">페이스</a></li>
+							<li><a href="#">아이 / 립</a></li>
+-->
+						</ul>
+					</div>
+				</div>
+			</li>
+			<li><a href="../common/SUB01.html">스토리</a></li>
+			<li><a href="../common/SUB02.html">브랜드</a></li>
+		</ul>
+	</div>
+	<div class="login">
+
+		<ul>
+			<li>
+				<a  class="a_in" href="#"><i class="f_login fas fa-search"></i>
+				<input class="search_box" type="text"></a>
+			</li>
+			<li><a href="../common/Login.html"><i class="f_login fas fa-user"></i></a></li>
+<!--			<li><a href="#"><i class="f_login fas fa-shopping-cart"></i></a></li>-->
+		</ul>
+	</div>
+</div>
+
+
+
+<script>
+//-------------------------------- MENU 나오기 -------------------------------	
+	$(".ALL").mouseenter(function() {
+		$(".nav_box").stop().slideDown();
+		$(".header").css({
+			background: "rgba(255, 255, 255, .8)"
+		});
+		$(".nav > ul > li >a ").css({
+			color: "#000"
+		});
+	});
+
+	$(".ALL").mouseleave(function() {
+		$(".nav_box").stop().slideUp(300);
+	});
+	$(".nav_box").mouseleave(function() {
+		$(".nav_box").stop().slideUp(100);
+	});
+
+	$(document).click(function() {
+		$(".Btn01").click(function() {
+			$(".category ul").css({
+				display: "block"
+			});
+			$(".line ul").css({
+				display: "none"
+			});
+		});
+	});
+
+//-------------------------------- Search 나오기 -------------------------------	
+
+
+		$('.a_in').on('click', function() {
+			console.log("?")
+			$('.search_box').animate({marginLeft:"40px", zIndex:"1", width:"7vw"});
+			$('.fa-search').animate({paddingRight:"50px"});
+			$('.fa-user').fadeOut();
+			$('.fa-shopping-cart').fadeOut();
+		});
+
+	  $('.a_in').mouseleave(function(){
+			$('.search_box').animate({marginLeft:"40px", zIndex:"0", width:"0px"},10);
+		  $('.fa-search').animate({paddingRight:"0px"});
+		  	$('.fa-user').fadeIn();
+			$('.fa-shopping-cart').fadeIn();
+		});
+
+//---------------------------------- 헤더 스크롤 반응-------------------------------
+	$(function() {
+		$(window).scroll(function(event) {
+			var lastScrollTop = 50,
+				delta = 15;
+			var st = $(this).scrollTop();
+			
+
+			if (st >= lastScrollTop) {
+				$(".header").css("top", "-90px"); // 스크롤을 내렸을때 #header의 CSS 속성중 top 값을 -50px로 변경한다. 
+			} else {
+				$(".header").css("top", "0px");
+			}
+			lastScrollTop = st;
+		});
+	});
+
+//-----------------------------------------------------------------------	
+	
+//
+//	$(function() {
+//		$(window).scroll(function(event) {
+//			var section03 = $(".section03").offset().top;
+//			var st = $(this).scrollTop();
+//
+//			if (st >= section03) {
+//				$(".txt_line").animate("width", "100px"); // 스크롤을 내렸을때 #header의 CSS 속성중 top 값을 -50px로 변경한다. 
+//			} else {
+//				$(".txt_line").animate("width", "0px");
+//			}
+//			lastScrollTop = st;
+//		});
+//	});
+
+</script>
