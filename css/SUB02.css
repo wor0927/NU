@@ -137,8 +137,6 @@ a { text-decoration: none;}
 	text-align: center;
 }
 
-
-
 /* 매우 작은 기기들 (모바일폰, 320px 보다 작은) */
 @media screen and (min-width:320px) and (max-width:640px){ 
 .SUB02_container {
@@ -153,12 +151,12 @@ a { text-decoration: none;}
     background-repeat: no-repeat;
 }
 .NU_box01 {
-    height: 600px;
+    height: 450px;
     background-image: url(../img/SUB02_nu01.png);
 
 }
 .NU_box02 {
-    height: 700px;
+    height: 600px;
     background-image: url(../img/SUB02_nu02.png);
 
 }
@@ -173,7 +171,7 @@ a { text-decoration: none;}
 .NU_box02 h1 {
     font-size: 5vw;
     margin: 0;
-    padding: 30px 60px 0 0;
+    padding: 30px 10px 0 0;
     text-align: right;
     font-weight:bolder;
 	position: relative;
@@ -184,7 +182,7 @@ a { text-decoration: none;}
 	background: #000;
 	width: 50px;
 	height: 3px;
-	right: 65px;
+	right: 10px;
 	position: absolute;
 }
 
@@ -224,7 +222,7 @@ a { text-decoration: none;}
 .NU_box03 h1 {
     font-size: 5vw;
     margin: 0;
-    padding: 250px 60px 0 0;
+    padding: 250px 10px 0 0;
     text-align: right;
     font-weight:bolder;
 	position: relative;
@@ -235,13 +233,13 @@ a { text-decoration: none;}
 	background: #000;
 	width: 50px;
 	height: 3px;
-	right: 65px;
+	right: 10px;
 	position: absolute;
 }
 .NU_box03 p {
     font-size: 18px;
     margin: 0;
-    padding: 30px 60px 0 0;
+    padding: 30px 10px 0 0;
     text-align: right;
     font-weight:normal;
 	letter-spacing: 0.05em;
@@ -289,7 +287,7 @@ a { text-decoration: none;}
 }
 
 /* 작은 기기들 (태블릿, 640px 이상) */
-@media screen and (min-width:640px) and (max-width:767px){
+@media screen and (min-width:641px) and (max-width:767px){
 .SUB02_container {
 	width: 100%;
 }
