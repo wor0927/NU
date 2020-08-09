@@ -1,7 +1,7 @@
 .container {
 	padding: 100px 0 0 0;
 	width: 100vw;
-	height: 2000px;
+	height: 1900px;
 }
 .P_main {
 	width: 100%;
@@ -28,7 +28,6 @@
     width:100%;
     height:100%;
 }
-
 .P_main h1 {
 	color: #fff;
 	font-size: 3vw;
@@ -41,15 +40,6 @@
 	width: 50%;
 	margin: 0 auto;
 }
-.content01 > h1 {
-    text-align: center;
-    margin: 100px 0 0;
-    font-size: 60px;
-	width: 100%;
-	position: relative;
-    border-bottom: 2px solid black;
-}
-
 
 /* ----- a_box1 ----- */
 .a_box1 {
@@ -67,8 +57,8 @@
 	position: absolute;
 	padding-top: 130px;
 }
-.a_box1 ul li:nth-child(2),
-.a_box1 ul li:nth-child(3) { visibility: hidden;}
+.a_box1 ul li:nth-child(1),
+.a_box1 ul li:nth-child(2) { visibility: hidden;}
 
 /* ----- a_box2 ----- */
 .a_box2 {
@@ -88,9 +78,7 @@
 }
 .a_box2 ul li a {color: #000;}
 
-.a_box2 ul li:hover a{
-	font-weight: bold;
-}
+
 
 /* ------------------------- content02 ------------------------- */
 .content02 {
@@ -100,9 +88,9 @@
 	position: relative;
 	border-bottom: 2px solid black;
 }
-
 .PRO {
 	visibility: hidden;
+	_visibility: visible;
 	position: absolute;
 	width: 100%;
 	height: 700px;
@@ -111,14 +99,14 @@
 
 /* ----- a_box1 ----- */
 .b_box1 {
-	width: 80%;
+	width: 100%;
 	height: 350px;
 	margin: 0 auto;
 	position: relative;
 }
 /* ----- a_box2 ----- */
 .b_box2 {
-	width: 80%;
+	width: 100%;
 	height: 350px;
 	margin: 0 auto;
 	position: relative;
@@ -131,15 +119,9 @@
 	float: left;
 	text-align: center;
 }
-.PRO01 img {
+.PRO01  img {
 	cursor: pointer;
 }
-
-.PRO01 img:hover {  
-	-webkit-filter: blur(1px);
-		filter: blur(3px);
-}
-
 .PRO01 ul {
 	width: 100%;
 }
@@ -176,4 +158,35 @@
 }
 
 /* --------------------------- */
+/* 매우 작은 기기들 (모바일폰, 320px 보다 작은) */
+@media screen and (min-width:320px) and (max-width:640px){ 
+	
+}
 
+/* 작은 기기들 (태블릿, 640px 이상) */
+@media screen and (min-width:640px) and (max-width:767px){
+
+}
+
+/* 작은 기기들 (태블릿, 768px 이상) */
+@media screen and (min-width:768px) and (max-width:991px){
+
+
+}
+ 
+/* 중간 기기들 (데스크탑, 992px 이상) */
+@media screen and (min-width:992px) and (max-width:1024px) {
+
+
+}
+
+/* 큰 기기들 (큰 데스크탑, 1025px 이상) */
+@media screen and (min-width:1025px) and (max-width:1279px) {
+   
+}
+
+/* 큰 기기들 (큰 데스크탑, 1280px 이상) */
+@media screen and (min-width:1280px) and (max-width:1920px) {
+
+    
+}

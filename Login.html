@@ -28,15 +28,15 @@ $(function () {
 
 	<div class="contanier">
        	<div class="contact-form">
-			<img src="2.jpg" class="avatar">
+<!--			<img src="./img/2.PNG" class="avatar">-->
 			<h2>로그인</h2>
 			<form>
-				<p>이메일</p>
-				<input type="text" name="" placeholder="Enter Email" style="font-weight: normal; font-size: 12px;">
-				<p>비밀번호</p>
-				<input type="password" name="" placeholder="Enter Password">
-				<input type="submit" name="" value="로그인">
-				<p><input type="button" value="회원가입"></p>
+				<p><label for="login">이메일</label></p>
+				<input type="text" id="login" placeholder="Enter Email" required="required">
+				<p><label for="pass">비밀번호</label></p>
+				<input type="password" id="pass" placeholder="Enter Password" required="required">
+				<p class="in_login"><input type="submit" value="로그인"></p>
+				<p class="in_member"><input type="button" value="회원가입"></p>
 			</form>		
 			<div class="login_box"></div>
         </div>

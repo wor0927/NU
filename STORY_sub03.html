@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-	<title>무공해라이프</title>
+	<title>SAVE US</title>
 	<link rel="stylesheet" href="css/SUB01.css">
 	<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
 	<script type="text/javascript" src="js/wow.min.js"></script>
@@ -19,18 +19,41 @@
 	<link rel="stylesheet" href="css/footer.css">
 </head>
     <style>
-        .STORY_sub01 {
+        .STORY_sub03 {
             width: 50%;
             margin: 50px auto;
             padding: 50px 0 ;
             border-bottom: 3px solid #eee;
             text-align: center;
         }
-        .STORY_sub01 h1 {
+        .STORY_sub03 h1 {
             text-align: left;
             border-bottom: 3px solid #000;
             margin-bottom: 100px;
         }
+    
+
+
+/* 작은 기기들 (태블릿, 768px 이상) */
+@media screen and (min-width:320px) and (max-width:991px){
+    .STORY_sub03 {
+        width:100%;
+    }
+    .STORY_sub03 h1 {
+        text-align: center;
+    }
+    .STORY_sub03 img {
+        width: 100%;
+        height: 100%;
+    }
+}
+ 
+/* 중간 기기들 (데스크탑, 992px 이상) */
+@media screen and (min-width:992px) and (max-width:1279px) {
+    .STORY_sub03 {
+        width:100%;
+    }
+}
     </style>
 <script>
 ////////////////////header, footer로드//////////////////////
@@ -42,9 +65,9 @@ $(function () {
 
 <body>
 <header></header>
-    <div class="STORY_sub01">
+    <div class="STORY_sub03">
         <h1>기획전</h1>
-        <img src="img/STORY_sub01" alt="무공해라이프캠페인">
+        <img src="img/STORY_sub03" alt="SAVE US">
     </div>
 <footer class="footer"></footer>
 </body>
